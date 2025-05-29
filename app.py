@@ -3,6 +3,11 @@ from agent import process_video_url
 from streamlit_lottie import st_lottie
 import json
 import os
+import streamlit as st
+
+openai_key = st.secrets["api_keys"]["openai"]
+
+os.environ["OPENAI_API_KEY"] = openai_key
 
 # Loadv animations
 def load_lottie(path):

@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfad7c3c-99f2-4296-b2b0-cd0f5a9c28e1" name="Changes" comment="first init" />
+    <list default="true" id="cfad7c3c-99f2-4296-b2b0-cd0f5a9c28e1" name="Changes" comment="first init">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/new_load.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/accent_classiffication_alpha-4.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/accent_classiffication_alpha.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/accent_classiffication_model.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/accent_classiffication_model2.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/accent_classiffication_model7.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/scaler.save" beforeDir="false" afterPath="$PROJECT_DIR$/models/scaler.save" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,12 +58,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "develop",
-    "last_opened_file_path": "D:/python_repos/accent_classification",
+    "last_opened_file_path": "D:/python_repos/accent_classification/assets",
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python_repos\accent_classification\assets" />
+      <recent name="D:\python_repos\accent_classification\models" />
       <recent name="D:\python_repos\accent_classification" />
     </key>
   </component>
@@ -112,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748524063193</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="first init">
+      <option name="closed" value="true" />
+      <created>1748525524592</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748525524592</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

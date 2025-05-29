@@ -14,7 +14,7 @@ def load_lottie(path):
     with open(path, "r") as f:
         return json.load(f)
 
-lottie_loading = load_lottie("assets/loading.json")
+lottie_loading = load_lottie("assets/new_load.json")
 lottie_success = load_lottie("assets/success.json")
 
 # Page config

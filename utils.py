@@ -31,6 +31,7 @@ def extract_audio(video_path):
         "-i", video_path,
         "-ar", "16000",
         "-ac", "1",
+        "-t", "15",
         audio_path
     ])
     return audio_path
@@ -53,13 +54,13 @@ def classify_accent(transcript, audio_path):
     # filename = '/kaggle/input/fffdd54322/speaker11_male_india.mp3'
 
     filename = audio_path
-    Librosa_data, Librosa_sample_rate = librosa.load(filename)
+    Librosa_data, Librosa_sample_rate = librosa.load(filename,sr=None)
 
     mfccs = librosa.feature.mfcc(y=Librosa_data, sr=Librosa_sample_rate, n_mfcc=20)
 
     mfccs.tolist()
     # model=tf.keras.models.load_model('models/accent_calssiffication_model.h5')
-    model=load_model('models/accent_calssiffication_model.h5')
+    model=load_model('models/accent_classiffication_alpha-4.h5')
     # model=load_model("models/accent_calssiffication_model.h5")
     # model=load_model('models/accent_calssiffication_model.h5')
 
@@ -74,8 +75,12 @@ def classify_accent(transcript, audio_path):
     print(prediction)
     prediction_ANN_rounded = [np.argmax(i) for i in prediction]
 
-    speaker = ['american', 'welsh', 'telugu', 'bangla', 'australian', 'british', 'odiya',
-               'indian', 'malayalam']
+    # speaker = ['american', 'welsh', 'telugu', 'bangla', 'australian', 'british', 'odiya',
+    #            'indian', 'malayalam']
+
+    # speaker = ['indian', 'british', 'american', 'australian']
+
+    speaker = ['australian', 'american', 'british','indian']
 
     # confidence = int(max(model.predict_proba(mfccs_scaled)[0]) * 100)
     # confidence = int(max(prediction[0]) * 100)

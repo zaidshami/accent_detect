@@ -1,0 +1,12 @@
+.subtext {
+    text-align: center;
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+div[data-testid="metric-container"] {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}

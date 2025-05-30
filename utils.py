@@ -73,7 +73,9 @@ def classify_accent(transcript, audio_path):
     prediction = model.predict(mfccs_scaled)
     print('zzzz')
     print(prediction)
-    prediction_ANN_rounded = [np.argmax(i) for i in prediction]
+    formatted = [round(float(val), 6) for val in prediction.flatten()]
+
+    prediction_ANN_rounded = [np.argmax(i) for i in formatted]
 
     # speaker = ['american', 'welsh', 'telugu', 'bangla', 'australian', 'british', 'odiya',
     #            'indian', 'malayalam']
@@ -85,15 +87,16 @@ def classify_accent(transcript, audio_path):
 
     # confidence = int(max(model.predict_proba(mfccs_scaled)[0]) * 100)
     # confidence = int(max(prediction[0]) * 100)
-
-    probs = tf.nn.softmax(prediction).numpy()
-    confidence = int(max(probs[0]) * 100)
+    percentages = [round(float(val) * 100, 2) for val in prediction.flatten()]
+    print(percentages)
+    # probs = tf.nn.softmax(prediction).numpy()
+    # confidence = int(max(probs[0]) * 100)
     #
     # clf = joblib.load("models/accent_classifier.pkl")
     # prediction = clf.predict(feature)[0]
     # confidence = int(max(clf.predict_proba(feature)[0]) * 100)
     # return prediction, confidence
-    return speaker[prediction_ANN_rounded[0]], confidence
+    return speaker[prediction_ANN_rounded[0]], percentages
 
 
 

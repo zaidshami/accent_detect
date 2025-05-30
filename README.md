@@ -11,7 +11,7 @@ A smart AI-powered tool that classifies the **English accent** of a speaker in a
    Automatically extracts and preprocesses the audio from the video input.
 
 3. **Accent Classification using Deep Learning**  
-   - Detects speaker’s English accent: `British`, `American`, `Australian`, `Indian`, etc.
+   - Detects speaker’s English accent: `British`, `American`,  `Indian`, etc.
    - Returns a confidence score between `0-100%` for how fluent and natural the English sounds.
    - Optionally provides a short explanation or summary.
 

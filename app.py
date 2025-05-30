@@ -24,7 +24,7 @@ st.markdown('<style>' + open('style/custom.css').read() + '</style>', unsafe_all
 st.markdown("<h1 style='text-align: center;'>🎙️ English Accent Evaluator</h1>", unsafe_allow_html=True)
 st.markdown("<p class='subtext'>Evaluate spoken English from video links. Perfect for smart hiring!</p>", unsafe_allow_html=True)
 
-video_url = st.text_input("🔗 Paste a video URL (MP4, Loom, etc.)")
+video_url = st.text_input("🔗 Paste a video,audio URL ")
 
 if st.button("🚀 Analyze Video"):
     if not video_url:

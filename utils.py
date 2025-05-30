@@ -81,7 +81,7 @@ def classify_accent(transcript, audio_path):
     # speaker = ['indian', 'british', 'american', 'australian']
 
     # speaker = ['australian', 'american', 'british','indian']
-    speaker = ['american', 'indian', 'british']
+    speaker = ['British','American','Canadian','Indian','Australian']
 
     # confidence = int(max(model.predict_proba(mfccs_scaled)[0]) * 100)
     # confidence = int(max(prediction[0]) * 100)

@@ -74,6 +74,8 @@ def classify_accent(transcript, audio_path):
     print('zzzz')
     print(prediction)
     formatted = [round(float(val), 6) for val in prediction.flatten()]
+    print('flatten prediction :')
+    print(formatted)
 
     prediction_ANN_rounded = [np.argmax(i) for i in formatted]
 

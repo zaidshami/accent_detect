@@ -31,7 +31,7 @@ def extract_audio(video_path):
         "-i", video_path,
         "-ar", "16000",
         "-ac", "1",
-        "-t", "5",
+        "-t", "15",
         audio_path
     ])
     return audio_path

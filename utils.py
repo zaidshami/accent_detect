@@ -78,7 +78,7 @@ def classify_accent(transcript, audio_path):
     print(formatted)
 
     # prediction_ANN_rounded = [np.argmax(i) for i in formatted]
-    prediction_ANN_rounded =np.argmax(formatted[0])
+    prediction_ANN_rounded =np.argmax(formatted)
 
     # speaker = ['american', 'welsh', 'telugu', 'bangla', 'australian', 'british', 'odiya',
     #            'indian', 'malayalam']

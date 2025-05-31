@@ -106,7 +106,7 @@ def classify_accent(transcript, audio_path):
     # prediction = clf.predict(feature)[0]
     # confidence = int(max(clf.predict_proba(feature)[0]) * 100)
     # return prediction, confidence
-    return speaker[max_index], percentages
+    return speaker[max_index], max(percentages)
 
 
 

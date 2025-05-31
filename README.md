@@ -28,7 +28,6 @@ A smart AI-powered tool that classifies the **English accent** of a speaker in a
 
 ### ⚠️ Accuracy Note
 > This model was built as part of a task with a focus on functionality and pipeline integration more than high accuracy.  
-> However, the performance for **Indian** and **British** accents shows reasonable accuracy and can be relied upon for preliminary screening.
 
 ### 🧑‍💻 Tech Stack
 - **LangChain**: Orchestrates the AI agent logic and tools.

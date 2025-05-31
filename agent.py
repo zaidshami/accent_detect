@@ -9,7 +9,7 @@ def process_video_url(url: str) -> dict:
 
     tools = [
         Tool(name="Accent Classifier", func=lambda _: accent, description="Classifies accents"),
-        Tool(name="Confidence Scorer", func=lambda _: confidence, description="Scores English fluency"),
+        Tool(name="Confidence Scorer", func=lambda _: confidence, description="Scores"),
     ]
     llm = OpenAI(temperature=0,)
     agent = initialize_agent(tools, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=False)

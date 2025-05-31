@@ -90,7 +90,7 @@ def classify_accent(transcript, audio_path):
     # speaker = ['indian', 'british', 'american', 'australian']
 
     # speaker = ['australian', 'american', 'british','indian']
-    speaker = ['American','British','Indian','Canadian','Australian']
+    speaker = ['American','British','Indian','Canadian','Indian']
 
 
     print(speaker[max_index])

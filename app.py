@@ -41,7 +41,7 @@ if st.button("🚀 Analyze Video"):
         with col1:
             st.metric(label="🧭 Accent", value=results["accent"])
         with col2:
-            st.metric(label="💬 English Fluency Score", value=f'{results["confidence"]}%')
+            st.metric(label="💬 Score", value=f'{results["confidence"]}%')
 
         st.markdown("### 💡 Explanation")
         st.info(results["explanation"])

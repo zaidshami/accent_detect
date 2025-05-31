@@ -60,7 +60,7 @@ def classify_accent(transcript, audio_path):
 
     mfccs.tolist()
     # model=tf.keras.models.load_model('models/accent_calssiffication_model.h5')
-    model=load_model('models/accent_classiffication_alpha-ct.keras')
+    model=load_model('models/accent_classiffication_alpha-c2.keras')
     # model=load_model("models/accent_calssiffication_model.h5")
     # model=load_model('models/accent_calssiffication_model.h5')
 
@@ -90,7 +90,7 @@ def classify_accent(transcript, audio_path):
     # speaker = ['indian', 'british', 'american', 'australian']
 
     # speaker = ['australian', 'american', 'british','indian']
-    speaker = ['British','American','Canadian','Australian','Indian']
+    speaker = ['American','British','Indian','Canadian','Australian']
 
 
     print(speaker[max_index])
